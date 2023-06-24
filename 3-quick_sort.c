@@ -14,14 +14,14 @@ void quicksort(int *array, int low, int high, size_t size)
 {
 	int i, j, tmp;
 	int pivot;
+	int pi;
 
 	if (low < high)
 	{
 		pivot = array[high];
 		i = (low - 1);
-		j;
 
-		for (j = low, j <= high - 1; j++)
+		for (j = low; j <= high - 1; j++)
 		{
 			if (array[j] <= pivot)
 			{
@@ -43,7 +43,7 @@ void quicksort(int *array, int low, int high, size_t size)
 			print_array(array, size);
 		}
 
-		auto pi = (i + 1);
+		pi = (i + 1);
 
 		quicksort(array, low, pi - 1, size);
 		quicksort(array, pi + 1, high, size);
