@@ -38,7 +38,7 @@ void quicksort(int *array, int low, int high, size_t size)
 		if (array[i + 1] > array[high])
 		{
 			tmp = array[i + 1];
-			array[i + j] = array[high];
+			array[i + 1] = array[high];
 			array[high] = tmp;
 			print_array(array, size);
 		}
