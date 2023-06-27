@@ -26,14 +26,7 @@ void bubble_sort(int *array, size_t size)
 
 				for (x = 0; x < size; x++)
 				{
-					if (x == size - 1)
-					{
-						printf("%d", array[x]);
-					}
-					else
-					{
-						printf("%d ", array[x]);
-					}
+					printf("%d ", array[x]);
 				}
 				printf("\n");
 			}
